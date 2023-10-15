@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <script src="script.js"></script>
+    <!-- nav bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Krushna</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav id="mobile-nav">
+        <div class="logo">Krushna</div>
+        <div class="mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="assests/profile-pic.png" alt="Krushna Lohar profile picture" class="krushna"/>
+        </div>
+        <div class="section-txt">
+            <p class="section-txt-p1">Hello, I'm</p>
+            <h1 class="title">Krushna Lohar</h1>
+            <p class="section-txt-p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <div id="social-container">
+                <img src="./assests/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/krushnalohar/'"/>
+                <img src="./assests/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/KrushnaLohar'" \/>
+          </div>
+        </div>
+      </section>
+
+
+    <section id="about">
+        <p class="section-txt-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img
+              src="./assests/profile-pic-2.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-container">
+              <div class="details-container">
+                <img
+                  src="assests/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>Fresher<br/>Software Engineer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="assests/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech (2020-24)<br />VIT, Pune</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                    Hello, I'm Krushna Lohar, a Mechanical Engineering student at Vishwakarma Institute of Technology in Pune. I'm passionate about technology and aspire to be a full-stack developer. My skill set includes proficiency in C, C++, and JavaScript, and I'm currently focused on mastering Data Structures and Algorithms (DSA). I'm based in Pune and I'm excited to be a part of diverse and intriguing projects, which allows me to expand my potential. Feel free to reach out to me to discuss ideas and collaborate in the dynamic world of technology.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assests/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+    <section id="Experience">
+        <p class="section-txt-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="Experience-detail-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">
+                        Frontend Development
+                    </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>JavaScript</h3>
+                                <p>Basic</p> 
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-subtitle">
+                        Backend Development
+                    </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>JavaScript</h3>
+                                <p>Basic</p> 
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience-icon" class="icon">
+                            <div class="">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#Projects'">
+    </section>
+
+
+    <section id="Projects">
+        <p class="section-txt-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experince-detail-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project-1.png" alt="project 1 png" class="Project-img">
+                    </div>
+    
+                    <h2 class="experience-subtitle project-title">
+                        Amazon Clone
+                    </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/KrushnaLohar/Amazon-Clone'">
+                            Git-hub
+                        </button>
+    
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/'">
+                            Live-Demo
+                        </button> -->
+    
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project-2.png" alt="project 1 png" class="Project-img">
+                    </div>
+    
+                    <h2 class="experience-subtitle project-title">
+                        Netflix-Clone
+                    </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/KrushnaLohar/Netflix-Clone'">
+                            Git-hub
+                        </button>
+    
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href = 'github.com'">
+                            Live-Demo
+                        </button> -->
+    
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/project-3.png" alt="project 3 png" class="Project-img">
+                    </div>
+    
+                    <h2 class="experience-subtitle project-title">
+                        MH-Travel
+                    </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/KrushnaLohar/MH-Travel'">
+                            Git-hub
+                        </button>
+    
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://vaishnav2121.github.io/our%20website.html'">
+                            Live-Demo
+                        </button>
+    
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#Contact'">
+    </section>
+
+
+    <section id="contact">
+        <p class="section-txt-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="./assests/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:krushnalohar2002@gmail.com">krushnalohar2002@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="./assests/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/krushnalohar/">LinkedIn</a></p>
+            </div>
+        </div>
+      </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Krushna Lohar. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>
