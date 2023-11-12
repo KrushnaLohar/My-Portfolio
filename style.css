@@ -415,3 +415,52 @@ footer {
 footer p {
     text-align: center;
 }
+
+
+/* scroll animation in About me, skill and project section */
+#left {
+    transform: translateX(-400%);
+    transition: transform 0.75s ease;
+}
+
+#left.show {
+    transform: translateX(0);
+}
+
+#right {
+    transform: translateX(400%);
+    transition: transform 1s ease;
+}
+
+#right.show {
+    transform: translateX(0);
+}
+
+#middle {
+    transform: none;
+}
+
+.details-container {
+    transform: translateX(-100%);
+    transition-delay: calc(.2S *var(--i));
+}
+
+
+/* text scrolling animation */
+section .animate {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animate {
+    opacity: 1;
+    filter: blur(0);
+}
+.sec-1 .animate {
+    /* transform: translateX(-100%); */
+    transform: scale(.7);
+}
+.sec-1.show-animate .animate {
+    /* transform: translateX(0); */
+    transform: scale(1);
+}
