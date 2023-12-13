@@ -11,7 +11,7 @@ window.addEventListener('scroll', checkBoxes);
 
 checkBoxes();
 function checkBoxes() {
-    const triggerBtn = window.innerHeight;
+    const triggerBtn = window.innerHeight /5 * 4;
     // console.log(window.innerHeight / 5 * 4);
 
     boxes.forEach(box => {

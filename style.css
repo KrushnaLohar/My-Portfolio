@@ -429,7 +429,7 @@ footer p {
 
 #right {
     transform: translateX(400%);
-    transition: transform 1s ease;
+    transition: transform 0.75s ease;
 }
 
 #right.show {
@@ -440,7 +440,7 @@ footer p {
     transform: none;
 }
 
-.details-container {
+.nobody {
     transform: translateX(-100%);
     transition-delay: calc(.2S *var(--i));
 }
@@ -457,10 +457,10 @@ section.show-animate .animate {
     filter: blur(0);
 }
 .sec-1 .animate {
-    /* transform: translateX(-100%); */
+
     transform: scale(.7);
 }
 .sec-1.show-animate .animate {
-    /* transform: translateX(0); */
+
     transform: scale(1);
 }
